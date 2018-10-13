@@ -16,7 +16,8 @@ export class LoginFormComponent {
     Login(){
         alert("login");
         this.LoginService.postLogin({username: this.username, password: this.password}).then(res => {
-            
+            // sessionStorage['User'] = JSON.stringify(res);
+            this.router.navigate(['user']);
         });
     }
 
