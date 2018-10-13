@@ -1,0 +1,7 @@
+<div>
+    <h2>Log In</h2>
+
+    <input type="text" name="firstname" (input)="username = $event.target.value" />
+    <input type="password" name="password" (input)="password = $event.target.value" />
+    <div (click)="Login()">Log In</div>  
+</div>
